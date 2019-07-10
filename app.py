@@ -74,3 +74,4 @@ recipients = ['someone@example.com']
 if __name__ == "__main__":
     # Send email
     send(account, subject, body, recipients)
+
