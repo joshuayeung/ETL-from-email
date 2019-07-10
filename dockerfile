@@ -1,6 +1,6 @@
-# Python 3.6.7
+# Python 3.7.4
 
-FROM python:3.6.7-alpine3.6
+FROM python:3.7.4
 
 # author of file
 LABEL maintainer="Joshua Yeung <joshuayeung@hk.chinamobile.com>"
@@ -16,3 +16,13 @@ RUN pip install -r requirement.txt
 
 # Docker container in /app directory
 COPY . /app
+
+# Specifies a command that will always be executed when the container starts.
+# In this case we want to start the python interpreter
+
+ENTRYPOINT ["python"]
+
+# We want to start app.py file. (change it with your file name)
+
+# Argument to python command
+CMD ["app.py"]
