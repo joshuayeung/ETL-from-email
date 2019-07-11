@@ -25,4 +25,4 @@ ENTRYPOINT ["python"]
 # We want to start app.py file. (change it with your file name)
 
 # Argument to python command
-CMD ["app.py"]
+CMD ["download_pccw_ps.py"]
